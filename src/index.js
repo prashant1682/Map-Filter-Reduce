@@ -1,12 +1,12 @@
 // //Map -Create a new array by doing something with each item in an array.
-var numbers = [3, 56, 2, 48, 5];
-function double(x) {
-  return x * 2;
-}
+// var numbers = [3, 56, 2, 48, 5];
+// function double(x) {
+//   return x * 2;
+// }
 
-const newNumber = numbers.map(double);
+// const newNumber = numbers.map(double);
 
-console.log(newNumber);
+// console.log(newNumber);
 
 //Filter - Create a new array by keeping the items that return true.
 // var numbers = [3, 56, 2, 48, 5];
@@ -47,3 +47,15 @@ console.log(newNumber);
 // });
 // // will return 1
 // console.log(newNumber);
+
+// CHALLENGE
+import emojipedia from "./emojipedia";
+
+function newArray(emojipedia) {
+  // return emojipedia.meaning.slice(0, 100);
+  // above and the below works the same same way
+  return emojipedia.meaning.substring(0, 100);
+}
+
+const newMeaning = emojipedia.map(newArray);
+console.log(newMeaning);
